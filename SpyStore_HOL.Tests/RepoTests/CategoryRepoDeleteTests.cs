@@ -24,6 +24,8 @@ namespace SpyStore_HOL.Tests.RepoTests
             _repo.Dispose();
         }
 
+        
+
         private void CleanDatabase()
         {
             _repo.Context.Database.ExecuteSqlCommand("Delete from Store.Categories");
